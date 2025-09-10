@@ -98,8 +98,12 @@ class Sub:
             p1_repr = "( " + repr(self.p1) + " )"
         else:
             p1_repr = repr(self.p1)
-        
-        if isinstance(self.p2, Add) or isinstance(self.p2, Sub) or isinstance(self.p2, Div):
+
+        if (
+            isinstance(self.p2, Add)
+            or isinstance(self.p2, Sub)
+            or isinstance(self.p2, Div)
+        ):
             p2_repr = "( " + repr(self.p2) + " )"
         else:
             p2_repr = repr(self.p2)
@@ -133,8 +137,13 @@ class Div:
             p1_repr = "( " + repr(self.p1) + " )"
         else:
             p1_repr = repr(self.p1)
-        
-        if isinstance(self.p2, Add) or isinstance(self.p2, Sub) or isinstance(self.p2, Div) or isinstance(self.p2, Mul):
+
+        if (
+            isinstance(self.p2, Add)
+            or isinstance(self.p2, Sub)
+            or isinstance(self.p2, Div)
+            or isinstance(self.p2, Mul)
+        ):
             p2_repr = "( " + repr(self.p2) + " )"
         else:
             p2_repr = repr(self.p2)
